@@ -13,13 +13,19 @@ dependencies:
   universal_platform: ^1.0.0+1
   # 支付接口
   flutter_pay_interface:
-    path: ./plugin/flutter_pay_interface
+   git:
+    url: http://git.eatdesk.net/flutter_plugin/flutter_pay_interface.git
+    ref: e79d623ba7d7b1a3c7d75d7cb6e215ac93906a7e
   # ios
   flutter_pay_ios:
-    path: ./plugin/flutter_pay_ios
+   git:
+    url: http://git.eatdesk.net/flutter_plugin/flutter_pay_ios.git
+    ref: ef701632490d73e387c1a32aec7bd3f390e3f792
   # android
   flutter_pay_android:
-    path: ./plugin/flutter_pay_android
+   git:
+    url: http://git.eatdesk.net/flutter_plugin/flutter_pay_android.git
+    ref: 74949adc9c07dd585e77b8327d7a08cc465e86a3
 
 dev_dependencies:
   flutter_test:
