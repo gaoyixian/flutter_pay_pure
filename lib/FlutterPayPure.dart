@@ -6,10 +6,10 @@ import 'package:universal_platform/universal_platform.dart';
 class FlutterPayPure {
   static late FlutterPayInterface _interface;
   static Future<void> init(
-      Future<bool> Function(String?, String, String) verifyReceipt) async {
+      Future<bool> Function(String?, String, String) verifyReceipt, void Function() onError) async {
     if (UniversalPlatform.isIOS) {
       _interface = FlutterPayIos();
-      _interface.init(verifyReceipt);
+      _interface.init(verifyReceipt, onError);
     } else if (UniversalPlatform.isAndroid) {
       _interface = FlutterPayAndroid();
     }
