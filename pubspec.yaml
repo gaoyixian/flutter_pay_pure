@@ -13,13 +13,13 @@ dependencies:
   universal_platform: ^1.0.0+1
   # 支付接口
   flutter_pay_interface:
-    path: plugin/flutter_pay_interface
+    path: ./plugin/flutter_pay_interface
   # ios
   flutter_pay_ios:
-    path: plugin/flutter_pay_ios
+    path: ./plugin/flutter_pay_ios
   # android
   flutter_pay_android:
-    path: plugin/flutter_pay_android
+    path: ./plugin/flutter_pay_android
 
 dev_dependencies:
   flutter_test:
