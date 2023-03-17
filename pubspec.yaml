@@ -25,7 +25,7 @@ dependencies:
   flutter_pay_android:
    git:
     url: http://git.eatdesk.net/flutter_plugin/flutter_pay_android.git
-    ref: 2e39161a24cbb6cefea60f4e32d6b33e20acf548
+    ref: 186f48a9b7264c6f6e0167f8e9dc692e39c6a5d4
 
 dev_dependencies:
   flutter_test:
