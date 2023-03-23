@@ -74,24 +74,38 @@ packages:
   flutter_pay_android:
     dependency: "direct main"
     description:
-      path: "plugin/flutter_pay_android"
-      relative: true
-    source: path
+      path: "."
+      ref: "9c9bf961169fbadeafee10f4cbba140729a89a1d"
+      resolved-ref: "9c9bf961169fbadeafee10f4cbba140729a89a1d"
+      url: "http://git.eatdesk.net/flutter_plugin/flutter_pay_android.git"
+    source: git
     version: "0.0.1"
   flutter_pay_interface:
     dependency: "direct main"
     description:
-      path: "plugin/flutter_pay_interface"
-      relative: true
-    source: path
+      path: "."
+      ref: "9a211073aa40be20ebd15c8507186df07691ed9c"
+      resolved-ref: "9a211073aa40be20ebd15c8507186df07691ed9c"
+      url: "http://git.eatdesk.net/flutter_plugin/flutter_pay_interface.git"
+    source: git
     version: "0.0.1"
   flutter_pay_ios:
     dependency: "direct main"
     description:
-      path: "plugin/flutter_pay_ios"
-      relative: true
-    source: path
+      path: "."
+      ref: "7bd0313a4c4311fb9285c36d82e03fd8b25959e8"
+      resolved-ref: "7bd0313a4c4311fb9285c36d82e03fd8b25959e8"
+      url: "http://git.eatdesk.net/flutter_plugin/flutter_pay_ios.git"
+    source: git
     version: "0.0.1"
+  flutter_screenutil:
+    dependency: transitive
+    description:
+      name: flutter_screenutil
+      sha256: "0a122936b450324cbdfd51be0819cc6fcebb093eb65585e9cd92263f7a1a8a39"
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "5.7.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
