@@ -201,7 +201,7 @@ class _RechargePopupState extends State<RechargePopup> {
         name: '支付宝支付'),
     Pay(
         index: payTypeWechat,
-        url: 'assets/images/mypage_new/wechat_icon.png',
+        url: 'assets/images/message_new/wechat_icon.png',
         name: '微信支付'),
   ];
 
