@@ -41,6 +41,15 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.17.0"
+  events_widget:
+    dependency: transitive
+    description:
+      path: "."
+      ref: ef7c3b91ad6e1527b7eb95004884b919d4991b89
+      resolved-ref: ef7c3b91ad6e1527b7eb95004884b919d4991b89
+      url: "http://git.eatdesk.net/flutter_plugin/events_widget.git"
+    source: git
+    version: "0.0.1"
   fake_async:
     dependency: transitive
     description:
@@ -184,6 +193,15 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "2.1.4"
+  pull_to_refresh:
+    dependency: transitive
+    description:
+      path: "."
+      ref: dbef66cc57ba6be68653c20a7a38ac9178646075
+      resolved-ref: dbef66cc57ba6be68653c20a7a38ac9178646075
+      url: "http://git.eatdesk.net/flutter_plugin/flutter_pulltorefresh.git"
+    source: git
+    version: "2.0.0"
   sky_engine:
     dependency: transitive
     description: flutter

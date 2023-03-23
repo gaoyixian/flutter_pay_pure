@@ -11,7 +11,7 @@ Widget returnBackBlackBtn({double? left}) {
     padding: EdgeInsets.only(left: left ?? 16.w),
     color: Colors.transparent,
     child: Image.asset(
-      'assets/images/login_new/return_black.png',
+      'packages/flutter_pay_android/assets/images/login_new/return_black.png',
       width: 20.w,
       height: 20.w,
       fit: BoxFit.cover,
@@ -108,8 +108,8 @@ class _AndroidPlayButtonState extends State<AndroidPlayButton> {
               children: [
                 Image.asset(
                   !isAli
-                      ? 'assets/images/mypage_new/wcicon.png'
-                      : 'assets/images/mypage_new/zicon.png',
+                      ? 'packages/flutter_pay_android/assets/images/mypage_new/wcicon.png'
+                      : 'packages/flutter_pay_android/assets/images/mypage_new/zicon.png',
                   width: 20 * rate,
                   height: 20 * rate,
                 ),
@@ -155,7 +155,7 @@ class _AndroidPlayButtonState extends State<AndroidPlayButton> {
                 top: 10 * rate, bottom: 10 * rate, left: 16 * rate),
             color: Colors.transparent,
             child: Image.asset(
-              'assets/images/mypage_new/drop_down_vip.png',
+              'packages/flutter_pay_android/assets/images/mypage_new/drop_down_vip.png',
               width: 16 * rate,
               height: 16 * rate,
             ),
@@ -197,11 +197,11 @@ class _RechargePopupState extends State<RechargePopup> {
   List<Pay> paymethod = [
     Pay(
         index: payTypeAlipay,
-        url: 'assets/images/mypage_new/zicon_circular.png',
+        url: 'packages/flutter_pay_android/assets/images/mypage_new/zicon_circular.png',
         name: '支付宝支付'),
     Pay(
         index: payTypeWechat,
-        url: 'assets/images/message_new/wechat_icon.png',
+        url: 'packages/flutter_pay_android/assets/images/message_new/wechat_icon.png',
         name: '微信支付'),
   ];
 
@@ -259,6 +259,7 @@ class _RechargePopupState extends State<RechargePopup> {
                 e.url,
                 width: 24.w,
                 height: 24.w,
+                // package: "flutter_pay_android",
               ),
             ),
             FlutterPayAndroid.localizationText(
@@ -276,7 +277,7 @@ class _RechargePopupState extends State<RechargePopup> {
       const Expanded(child: SizedBox()),
     );
     list.add(Image.asset(
-      'assets/images/home/next_setting.png',
+      'packages/flutter_pay_android/assets/images/home/next_setting.png',
       width: 20.w,
       height: 20.w,
       fit: BoxFit.cover,
@@ -296,7 +297,7 @@ class _RechargePopupState extends State<RechargePopup> {
               SizedBox(
                 width: 16.w,
                 height: 16.w,
-                child: Image.asset('assets/images/mypage_new/car_currency.png'),
+                child: Image.asset('packages/flutter_pay_android/assets/images/mypage_new/car_currency.png'),
               ),
               SizedBox(width: 4.w),
               FlutterPayAndroid.localizationText(
@@ -343,8 +344,7 @@ class _RechargePopupState extends State<RechargePopup> {
 }
 
 class Earnings extends StatefulWidget {
-  const Earnings({Key? key})
-      : super(key: key);
+  const Earnings({Key? key}) : super(key: key);
 
   @override
   EarningsState createState() => EarningsState();
