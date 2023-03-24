@@ -29,6 +29,9 @@ class FlutterPayPure {
   static int getTyp(bool isAli) {
     return _interface.getTyp(isAli);
   }
+   static String getPname(bool isAli) {
+    return _interface.getPname(isAli);
+  }
   // 支付
   static Future<void> pay(dynamic rsp, int time) async {
     _interface.pay(rsp, time);
