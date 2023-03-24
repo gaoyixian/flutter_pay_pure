@@ -26,6 +26,9 @@ class FlutterPayPure {
         onError: onError);
   }
 
+  static int getTyp(bool isAli) {
+    return _interface.getTyp(isAli);
+  }
   // 支付
   static Future<void> pay(dynamic rsp, int time) async {
     _interface.pay(rsp, time);
@@ -35,6 +38,7 @@ class FlutterPayPure {
   static Widget getPlayButton(BuildContext context, double rate, int chooseIndex, void Function (int index, int typ) toPay){
     return _interface.getPlayButton(context, rate, chooseIndex, toPay);
   }
+
   static void paymethodBottom(BuildContext context,
       {required int id,
       required int gold,
@@ -44,6 +48,10 @@ class FlutterPayPure {
         id: id, gold: gold, rmb: rmb, toPay: toPay);
   }
 
+  static void vipPayBottom(BuildContext context, {required int index, required void Function(bool isShow) onchange}) {
+    _interface.vipPayBottom(context, index: index, onchange: onchange);
+  }
+
   static Future<void> restorePurchases() async {
     await _interface.restorePurchases();
   }
@@ -51,8 +59,6 @@ class FlutterPayPure {
   static Future<void> logout() async {
     await _interface.logout();
   }
-
-  
 
   static Future<void> showBottomSheet(
       {required BuildContext context,
