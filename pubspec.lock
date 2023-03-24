@@ -75,8 +75,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: "8e3036d16c9f344d4efcea4b0ac1fde8a877addd"
-      resolved-ref: "8e3036d16c9f344d4efcea4b0ac1fde8a877addd"
+      ref: ade7d36ab2c62b7f39c56ac963f75da17e77120c
+      resolved-ref: ade7d36ab2c62b7f39c56ac963f75da17e77120c
       url: "http://git.eatdesk.net/flutter_plugin/flutter_pay_android.git"
     source: git
     version: "0.0.1"
@@ -84,8 +84,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: "9a211073aa40be20ebd15c8507186df07691ed9c"
-      resolved-ref: "9a211073aa40be20ebd15c8507186df07691ed9c"
+      ref: "7d3ceda4207275b9e8040d1485b46888f7aec72c"
+      resolved-ref: "7d3ceda4207275b9e8040d1485b46888f7aec72c"
       url: "http://git.eatdesk.net/flutter_plugin/flutter_pay_interface.git"
     source: git
     version: "0.0.1"
@@ -93,8 +93,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: "7bd0313a4c4311fb9285c36d82e03fd8b25959e8"
-      resolved-ref: "7bd0313a4c4311fb9285c36d82e03fd8b25959e8"
+      ref: "657503afffc3b7f1a34171b5396f65bfa782915c"
+      resolved-ref: "657503afffc3b7f1a34171b5396f65bfa782915c"
       url: "http://git.eatdesk.net/flutter_plugin/flutter_pay_ios.git"
     source: git
     version: "0.0.1"
