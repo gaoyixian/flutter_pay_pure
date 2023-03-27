@@ -75,8 +75,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: "7c4b6e90885c20706323eae612faad559a1261e7"
-      resolved-ref: "7c4b6e90885c20706323eae612faad559a1261e7"
+      ref: "080ab7ceb18086550c0a522c69f79e325364d47d"
+      resolved-ref: "080ab7ceb18086550c0a522c69f79e325364d47d"
       url: "http://git.eatdesk.net/flutter_plugin/flutter_pay_android.git"
     source: git
     version: "0.0.1"
