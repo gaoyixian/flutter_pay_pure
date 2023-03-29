@@ -74,29 +74,23 @@ packages:
   flutter_pay_android:
     dependency: "direct main"
     description:
-      path: "."
-      ref: "080ab7ceb18086550c0a522c69f79e325364d47d"
-      resolved-ref: "080ab7ceb18086550c0a522c69f79e325364d47d"
-      url: "http://git.eatdesk.net/flutter_plugin/flutter_pay_android.git"
-    source: git
+      path: "../flutter_pay_android"
+      relative: true
+    source: path
     version: "0.0.1"
   flutter_pay_interface:
     dependency: "direct main"
     description:
-      path: "."
-      ref: de90cdce50e90fefb95ba4778e690de5b48004ca
-      resolved-ref: de90cdce50e90fefb95ba4778e690de5b48004ca
-      url: "http://git.eatdesk.net/flutter_plugin/flutter_pay_interface.git"
-    source: git
+      path: "../flutter_pay_interface"
+      relative: true
+    source: path
     version: "0.0.1"
   flutter_pay_ios:
     dependency: "direct main"
     description:
-      path: "."
-      ref: a73882166ffe5498095ba0e506fd1ef35ecd0ca3
-      resolved-ref: a73882166ffe5498095ba0e506fd1ef35ecd0ca3
-      url: "http://git.eatdesk.net/flutter_plugin/flutter_pay_ios.git"
-    source: git
+      path: "../flutter_pay_ios"
+      relative: true
+    source: path
     version: "0.0.1"
   flutter_screenutil:
     dependency: transitive
