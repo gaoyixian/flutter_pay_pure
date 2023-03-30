@@ -23,12 +23,12 @@ dependencies:
     url: http://git.eatdesk.net/flutter_plugin/flutter_pay_ios.git
     ref: b116a39f3678d5523b3824148d80f7138d02a0cd
   #  path: ../flutter_pay_ios
-  # android
-  flutter_pay_android:
-   git:
-    url: http://git.eatdesk.net/flutter_plugin/flutter_pay_android.git
-    ref: 2c8514aba31d8adc32ff6e22a16bc4e57dfe38e3
-  #  path: ../flutter_pay_android
+  # # android
+  # flutter_pay_android:
+  #  git:
+  #   url: http://git.eatdesk.net/flutter_plugin/flutter_pay_android.git
+  #   ref: 2c8514aba31d8adc32ff6e22a16bc4e57dfe38e3
+  # #  path: ../flutter_pay_android
 
 dev_dependencies:
   flutter_test:
@@ -42,8 +42,8 @@ dev_dependencies:
 flutter:
   plugin:
     platforms:
-      android:
-        default_package: flutter_pay_android
+      # android:
+      #   default_package: flutter_pay_android
       ios:
         default_package: flutter_pay_ios
   # To add assets to your package, add an assets section, like this:

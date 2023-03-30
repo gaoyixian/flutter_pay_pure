@@ -71,26 +71,23 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.0.4"
-  flutter_pay_android:
-    dependency: "direct main"
-    description:
-      path: "../flutter_pay_android"
-      relative: true
-    source: path
-    version: "0.0.1"
   flutter_pay_interface:
     dependency: "direct main"
     description:
-      path: "../flutter_pay_interface"
-      relative: true
-    source: path
+      path: "."
+      ref: "8ea742a83925332ac8bb073730ea0932b2a28c92"
+      resolved-ref: "8ea742a83925332ac8bb073730ea0932b2a28c92"
+      url: "http://git.eatdesk.net/flutter_plugin/flutter_pay_interface.git"
+    source: git
     version: "0.0.1"
   flutter_pay_ios:
     dependency: "direct main"
     description:
-      path: "../flutter_pay_ios"
-      relative: true
-    source: path
+      path: "."
+      ref: b116a39f3678d5523b3824148d80f7138d02a0cd
+      resolved-ref: b116a39f3678d5523b3824148d80f7138d02a0cd
+      url: "http://git.eatdesk.net/flutter_plugin/flutter_pay_ios.git"
+    source: git
     version: "0.0.1"
   flutter_screenutil:
     dependency: transitive
@@ -201,15 +198,6 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "2.1.4"
-  pull_to_refresh:
-    dependency: transitive
-    description:
-      path: "."
-      ref: dbef66cc57ba6be68653c20a7a38ac9178646075
-      resolved-ref: dbef66cc57ba6be68653c20a7a38ac9178646075
-      url: "http://git.eatdesk.net/flutter_plugin/flutter_pulltorefresh.git"
-    source: git
-    version: "2.0.0"
   sky_engine:
     dependency: transitive
     description: flutter
