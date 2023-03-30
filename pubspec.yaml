@@ -1,4 +1,4 @@
-name: flutter_pay_pure
+name: flutter_pay
 description: A new Flutter package project.
 version: 0.0.1
 homepage:
@@ -17,17 +17,17 @@ dependencies:
     url: http://git.eatdesk.net/flutter_plugin/flutter_pay_interface.git
     ref: 8ea742a83925332ac8bb073730ea0932b2a28c92
   #  path: ../flutter_pay_interface
-  # ios
-  flutter_pay_ios:
-   git:
-    url: http://git.eatdesk.net/flutter_plugin/flutter_pay_ios.git
-    ref: b116a39f3678d5523b3824148d80f7138d02a0cd
+  # # ios
+  # flutter_pay_ios:
+  #  git:
+  #   url: http://git.eatdesk.net/flutter_plugin/flutter_pay_ios.git
+  #   ref: b116a39f3678d5523b3824148d80f7138d02a0cd
   #  path: ../flutter_pay_ios
   # android
   flutter_pay_android:
    git:
     url: http://git.eatdesk.net/flutter_plugin/flutter_pay_android.git
-    ref: 2c8514aba31d8adc32ff6e22a16bc4e57dfe38e3
+    ref: 6a560055224f6d9c867fb6249755d04b0478e622
   #  path: ../flutter_pay_android
 
 dev_dependencies:
@@ -44,8 +44,8 @@ flutter:
     platforms:
       android:
         default_package: flutter_pay_android
-      ios:
-        default_package: flutter_pay_ios
+      # ios:
+      #   default_package: flutter_pay_ios
   # To add assets to your package, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
