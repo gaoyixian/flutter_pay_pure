@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_pay_interface/flutter_pay_interface.dart';
+import 'dart:io';
 
 class FlutterPayPure {
   static Future<void> init(
@@ -8,7 +8,9 @@ class FlutterPayPure {
       required LocalizationText localizationText,
       required void Function() onError,
       required ShowBottomSheet showBottomSheet,
-      required withDrawalMgr}) async {
+      required withDrawalMgr,
+      required isSandbox}) async {
+    _isSandbox = isSandbox;
     FlutterPayPlatform.instance.init(
         verifyReceipt: verifyReceipt,
         localizationText: localizationText,
@@ -23,6 +25,37 @@ class FlutterPayPure {
 
   static String getPname(bool isAli) {
     return FlutterPayPlatform.instance.getPname(isAli);
+  }
+
+  //是否包含安卓
+  static bool _isSandbox = true;
+  static bool isAndroid(BuildContext context) {
+    if (Platform.isIOS && !_isSandbox) {
+      showDialog(
+          context: context,
+          builder: (context) {
+            return Container(
+              height: double.infinity,
+              width: double.infinity,
+              alignment: Alignment.center,
+              padding: const EdgeInsets.symmetric(horizontal: 30),
+              child: Container(
+                padding: const EdgeInsets.all(16),
+                color: Colors.black,
+                child: const Text(
+                  '支付插件选择错误。请重新打包！！！',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 14,
+                    decoration: TextDecoration.none,
+                  ),
+                ),
+              ),
+            );
+          });
+      return false;
+    }
+    return true;
   }
 
   // 支付
@@ -42,8 +75,10 @@ class FlutterPayPure {
       required int gold,
       required int rmb,
       required void Function(int p1, int p2) toPay}) {
-    FlutterPayPlatform.instance
-        .paymethodBottom(context, id: id, gold: gold, rmb: rmb, toPay: toPay);
+    if (isAndroid(context)) {
+      FlutterPayPlatform.instance
+          .paymethodBottom(context, id: id, gold: gold, rmb: rmb, toPay: toPay);
+    }
   }
 
   static void vipPayBottom(BuildContext context,
