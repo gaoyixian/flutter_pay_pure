@@ -8,7 +8,8 @@ class FlutterPayPure {
       required LocalizationText localizationText,
       required void Function() onError,
       required ShowBottomSheet showBottomSheet,
-      required withDrawalMgr}) async {
+      required withDrawalMgr,
+      required isSandbox}) async {
     FlutterPayPlatform.instance.init(
         verifyReceipt: verifyReceipt,
         localizationText: localizationText,
