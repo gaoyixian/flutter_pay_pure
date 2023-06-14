@@ -9,6 +9,7 @@ class FlutterPayPure {
       required void Function() onError,
       required ShowBottomSheet showBottomSheet,
       required withDrawalMgr,
+      String? payConfig, //pay插件配置
       required isSandbox}) async {
     _isSandbox = isSandbox;
     FlutterPayPlatform.instance.init(
@@ -16,7 +17,9 @@ class FlutterPayPure {
         localizationText: localizationText,
         onError: onError,
         showBottomSheet: showBottomSheet,
-        withDrawalMgr: withDrawalMgr);
+        withDrawalMgr: withDrawalMgr,
+        payConfig: payConfig,
+    );
   }
 
   static int getTyp(bool isAli) {
@@ -25,6 +28,10 @@ class FlutterPayPure {
 
   static String getPname(bool isAli) {
     return FlutterPayPlatform.instance.getPname(isAli);
+  }
+
+  static String getPnameByType(int type) {
+    return FlutterPayPlatform.instance.getPnameByType(type);
   }
 
   //是否包含安卓
