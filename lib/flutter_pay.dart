@@ -73,11 +73,12 @@ class FlutterPayPure {
   static void paymethodBottom(BuildContext context,
       {required int id,
       required int gold,
-      required int rmb,
+      required double price,
+      String? currencyCode,
       required void Function(int p1, int p2) toPay}) {
     if (isAndroid(context)) {
       FlutterPayPlatform.instance
-          .paymethodBottom(context, id: id, gold: gold, rmb: rmb, toPay: toPay);
+          .paymethodBottom(context, id: id, gold: gold, price: price, currencyCode: currencyCode, toPay: toPay);
     }
   }
 
