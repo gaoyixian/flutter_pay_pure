@@ -34,8 +34,8 @@ class FlutterPayPure {
   }
 
   // 支付
-  static Future<void> pay(dynamic rsp, int time) async {
-    FlutterPayPlatform.instance.pay(rsp, time);
+  static Future<dynamic> pay(dynamic rsp, int time) async {
+    return FlutterPayPlatform.instance.pay(rsp, time);
   }
 
   // 获取支付按钮
